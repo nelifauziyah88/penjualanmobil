@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1a1a5c, #2c2c6c);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background: #202040;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+}
+
+.login-box h2 {
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+button {
+    background-color: #5a5aff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4444ff;
+}
+
+.link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link a {
+    color: cyan;
+    text-decoration: none;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
