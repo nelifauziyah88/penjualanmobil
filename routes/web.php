@@ -2,9 +2,7 @@
 
 use App\Http\Controllers\ListBarangController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ListItemController;
-use App\Http\Controllers\AuthController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -46,10 +44,39 @@ Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']
 
 Route::get('/list_item', [ListItemController::class, 'index']);
 
-// Route web php pbl smtr 1
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
-Route::post('/login', [LoginController::class, 'login']);
-Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+// Route web pnl smtr 1
+Route::get('/signup', function () {
+    return view('auth.signup');
+})->name('signup');
 
-Route::get('/signup', [AuthController::class, 'showSignupForm'])->name('signup.form');
-Route::post('/signup', [AuthController::class, 'signup'])->name('signup.process');
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
+
+Route::get('/list-of-games', function () {
+    return view('list_of_games');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/produk1-pembeli', function () {
+    return view('produk1_pembeli');
+});
+
+Route::get('/produk2-pembeli', function () {
+    return view('produk2_pembeli');
+});
+
+Route::get('/produk3-pembeli', function () {
+    return view('produk3_pembeli');
+});
+
+Route::get('/editprofile', function () {
+    return view('editprofile');
+});
