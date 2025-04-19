@@ -3,6 +3,7 @@
 use App\Http\Controllers\ListBarangController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ListItemController;
+use App\Http\Controllers\ProductController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -80,3 +81,5 @@ Route::get('/produk3-pembeli', function () {
 Route::get('/editprofile', function () {
     return view('editprofile');
 });
+
+Route::get('/produk', [ProductController::class, 'index']);
