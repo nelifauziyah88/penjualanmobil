@@ -4,6 +4,7 @@ use App\Http\Controllers\ListBarangController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ListItemController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\PageController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -83,3 +84,6 @@ Route::get('/editprofile', function () {
 });
 
 Route::get('/produk', [ProductController::class, 'index']);
+
+Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/about', [PageController::class, 'about'])->name('about');
