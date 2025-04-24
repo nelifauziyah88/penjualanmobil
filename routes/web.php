@@ -85,5 +85,5 @@ Route::get('/editprofile', function () {
 
 Route::get('/produk', [ProductController::class, 'index']);
 
-Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/app', [PageController::class, 'home'])->name('home');
 Route::get('/about', [PageController::class, 'about'])->name('about');

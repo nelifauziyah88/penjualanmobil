@@ -8,8 +8,8 @@
     <p class="mb-4">Berikut adalah berita update di hari ini</p>
 
     @include('components.card', [
-        'imgsrc' => 'images/gonggong.jpg',
+        'imgsrc' => 'images/gonggong.png',
         'title' => 'Gonggong goreng Tepung mak Limah',
-        'description' => 'Kuliner unik satu ini wajib dicoba untuk menguji ketahanan gigi.'
+        'desc' => 'Kuliner unik satu ini wajib dicoba untuk menguji ketahanan gigi.'
     ])
 @endsection
